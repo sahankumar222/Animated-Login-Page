@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.pikbest.com/backgrounds/20190712/technology-hud-login-information-background_2848383.jpg!bw700");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+div{
+    padding: 55px;
+    color:aquamarine;
+    border: 2px solid aquamarine;
+    font-family:cursive;
+    border-width: 5px;
+    width: 250px;
+    text-align: center;
+}
+div{           /*box shadow effect and glasspormism*/
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+input{
+    border-radius: 10px;
+    height: 30px;
+    border-color: aquamarine;
+    color: aquamarine;
+    cursor: pointer;
+}
+.buttons{
+    border-color: aquamarine;
+    color: white;
+    font-family: cursive;
+    background: transparent;
+    cursor: pointer;
+    width:70px;
+}
+h1{
+    position: relative;
+    bottom: 30px;
+    font-family:Verdana;
+    text-decoration: underline;
+    text-decoration-color:aquamarine;
+    text-decoration-thickness:1px;
+    background: linear-gradient(to right, rgba(0,168,253), aquamarine 35%, #191970 );
+    background-size: 900% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sahan 1s linear infinite;
+}
+@keyframes sahan {
+    0%{background-position: 0% 75%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 70%;}
+
+}
+/*.text{
+    box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+}*/ /* for box shadow for name*/
+
+.unique{
+    background: transparent;
+    width: 200px;
+    text-align: center;
+}
+div:hover{                  
+    cursor: pointer;
+    animation: outside 1s ease-in-out;
+  }
+@keyframes outside{
+    0%{
+      box-shadow: 0 0 55px #5ddcff, 0 0 100px #4e00c2;
+    }
+  }
+input:hover{                  
+    animation: inside 1s ease-in-out;
+  }
+@keyframes inside{
+    0%{
+      box-shadow: 0 0 55px #5ddcff, 0 0 100px #4e00c2;
+    }
+  }
+  @media screen and (max-width:600px){
+    div{
+      padding: 13px;
+      color:aquamarine;
+      border: 2px solid aquamarine;
+      font-family:cursive;
+      border-width: 5px;
+      width: 250px;
+      text-align: center;
+  }
+  div{           /*box shadow effect and glasspormism*/
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+      background: transparent;
+      backdrop-filter: blur(20px);
+  }
+  h1{
+    font-size: 25px;
+    position: relative;
+    top:0px;
+    
+  }
+  .unique{
+    width: 165px;
+  }
+  .buttons{
+    width: 60px;
+  }
+  }
